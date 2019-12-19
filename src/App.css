@@ -599,25 +599,69 @@ figure > img {
   margin: 0;
 }
 
-/*One screen: full width*/
-@media screen and (max-width: 1920px) {
+.nav-item > a.active {
+  border: 3px solid white;
+  border-radius: 10px 40px 40px 10px;
+  padding-left: 10px;
+  background: linear-gradient(-45deg, #6d0bbd, #9230af, #db7515, #faf871);
+  background-size: 300% 200%;
+  animation: gradientIntroBG 5s ease infinite;
 }
 
-/*Smaller PC screens*/
-@media screen and (max-width: 1200px) {
+/*PC @ 1920px: section header display table-caption*/
+@media screen and (max-width: 1920px) {
   .section-header {
     position: relative;
     display: table-caption;
     background-color: #212529;
   }
+}
+
+/*Smaller PC screens*/
+@media screen and (max-width: 1200px) {
+  .content-container {
+    padding: 30px 0;
+    margin: 60px 0;
+  }
+
+  .intro-image {
+    width: 60%;
+  }
+
+  .description {
+    width: 75%;
+  }
 
   p {
     font-size: initial;
+  }
+
+  h1 {
+    font-size: 2.3rem !important;
+  }
+
+  h2 {
+    font-size: 1.8rem !important;
+  }
+}
+
+/*expand body content and headers @ 991px*/
+@media screen and (max-width: 991px) {
+  .body-content-container {
+    width: 100%;
+  }
+
+  .center-page {
+    width: 100%;
   }
 }
 
 /*iPads*/
 @media screen and (max-width: 768px) {
+  .title {
+    padding: 70px 0;
+  }
+
   .section-content {
     width: 100%;
     display: block;
@@ -632,7 +676,7 @@ figure > img {
   }
 
   .content-container {
-    padding: 0;
+    padding: 10px;
     margin: 0 0 50px 0;
   }
 
@@ -645,34 +689,22 @@ figure > img {
     padding: 0 50px !important;
   }
 
-  .nav-item > a.active {
-    border-radius: 0;
-    padding-left: 20px !important;
-    background: linear-gradient(-45deg, #6d0bbd, #9230af, #db7515, #faf871);
-    background-size: 300% 200%;
-    animation: gradientIntroBG 5s ease infinite;
-  }
-
   .project-header-bg {
     font-size: 6em;
   }
 }
 
-/*Phones*/
+/*Turn off timeline hotkey bar*/
+@media screen and (max-width: 659px) {
+  .timeline {
+    display: none;
+  }
+}
+
+/*Phones: general*/
 @media screen and (max-width: 576px) {
   .intro-image {
     width: 100%;
-  }
-
-  .timeline {
-    left: 0;
-    bottom: 0;
-    font-size: 0.8em;
-  }
-
-  #myBtn {
-    right: 0;
-    bottom: 0;
   }
 
   .body-content-container {
@@ -686,4 +718,41 @@ figure > img {
   .project-header-bg {
     font-size: 5em;
   }
+
+  h1 {
+    font-size: 2.2rem !important;
+  }
+
+  h2 {
+    font-size: 2rem !important;
+  }
+}
+
+/*iPhone XS Max @ 414px(larger) TO iPhone 11 Pro @ 375px(smaller)*/
+@media screen and (max-width: 414px) {
+  #myBtn {
+    right: 10px;
+    bottom: 10px;
+    padding: 10px;
+  }
+
+  .project-header-bg {
+    font-size: 3em;
+  }
+
+  .timeline {
+    display: none;
+  }
+
+  h1 {
+    font-size: 2rem !important;
+  }
+
+  h2 {
+    font-size: 1.5rem !important;
+  }
+}
+
+/*Iphone 11 Pro @ 375px: Extreme Smaller*/
+@media screen and (max-width: 375px) {
 }

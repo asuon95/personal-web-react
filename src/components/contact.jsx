@@ -205,7 +205,9 @@ class Contact extends Component {
           </p>
           <form id="question-form" onSubmit={this.handleSubmit.bind(this)}>
             <div className="form-group">
-              <label htmlFor="from_name">Name</label>
+              <label htmlFor="from_name">
+                <strong>Name</strong>
+              </label>
               <input
                 id="from_name"
                 name="from_name"
@@ -217,7 +219,9 @@ class Contact extends Component {
               />
             </div>
             <div className="form-group">
-              <label htmlFor="subject">Subject</label>
+              <label htmlFor="subject">
+                <strong>Subject</strong>
+              </label>
               <input
                 id="subject"
                 name="subject"
@@ -229,7 +233,9 @@ class Contact extends Component {
               />
             </div>
             <div className="form-group">
-              <label htmlFor="reply_to">Contact Email</label>
+              <label htmlFor="reply_to">
+                <strong>Contact Email</strong>
+              </label>
               <input
                 id="reply_to"
                 name="reply_to"
@@ -247,7 +253,9 @@ class Contact extends Component {
               </span>
             </div>
             <div className="form-group">
-              <label htmlFor="message_html">Message</label>
+              <label htmlFor="message_html">
+                <strong>Message</strong>
+              </label>
               <textarea
                 id="message_html"
                 name="message_html"
