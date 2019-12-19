@@ -20,3 +20,670 @@
 .App-link {
   color: #09d3ac;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  padding-top: 68px; /*bc navbar is fixed and takes up 68px*/
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Oswald", sans-serif;
+}
+
+p {
+  font-size: 1.1em;
+}
+
+/*complements footer*/
+.page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+.center-page {
+  margin: auto;
+  width: 50%;
+  text-align: center;
+  margin-bottom: 60px;
+  margin-top: 60px;
+}
+
+.align-page {
+  margin: auto;
+  width: 100%;
+  text-align: left;
+  padding: 100px 40px;
+}
+
+.section-first {
+  background-color: rgb(34, 93, 56);
+  color: white;
+}
+
+.section-second {
+  background-color: yellowgreen;
+  color: white;
+}
+
+.section-third {
+  background-color: rgb(0, 65, 107);
+  color: white;
+}
+
+.section-fourth {
+  background-color: yellow;
+  color: white;
+}
+.contact {
+  text-decoration: none;
+  color: black;
+}
+
+.contact:hover {
+  color: goldenrod;
+}
+
+.my-home-container,
+.my-contact-container,
+.my-education-container,
+.my-project-container,
+.my-page-not-found-container {
+  position: relative;
+  padding-bottom: 145px;
+}
+
+.my-education-container-2 {
+  padding-bottom: 0;
+}
+
+.my-carousel-container {
+  padding: 10px 0;
+  background: linear-gradient(-45deg, #35af1d, #043749, #f0f799, #06610e);
+  background-size: 300% 200%;
+  animation: gradientIntroBG 10s ease infinite;
+}
+
+.body-content-container {
+  text-align: center;
+  width: 80%;
+  margin: auto;
+}
+
+.intro-container {
+  position: relative;
+  padding-bottom: 100px;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 300% 200%;
+  animation: gradientIntroBG 12s ease infinite;
+}
+
+.intro-content {
+  text-align: center;
+  width: 80%;
+  margin: auto;
+}
+
+@keyframes gradientIntroBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.body-content-container {
+  background-color: rgb(255, 255, 255);
+  /* border: solid black 2px; */
+}
+
+.body-container {
+  padding-top: 30px;
+}
+
+.content-container {
+  padding: 30px;
+  margin: 60px;
+}
+
+.content-container:hover > .body-title {
+  animation: gradientIntroBG 5s ease infinite;
+}
+
+.body-title {
+  padding: 10px;
+  border-radius: 0 50px 0 30px;
+  background: linear-gradient(-45deg, #6d0bbd, #9230af, #db7515, #faf871);
+  background-size: 300% 200%;
+}
+
+.body-title:hover {
+  animation: gradientIntroBG 5s ease infinite;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: rgba(7, 7, 7, 0.733);
+  color: white;
+  cursor: pointer;
+  padding: 20px;
+  border-radius: 2%;
+}
+
+.gradientBG-container {
+  height: 200px;
+  background: linear-gradient(0deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 300% 200%;
+}
+
+.education-gradientBG-container {
+  height: 200px;
+  background: linear-gradient(
+    -45deg,
+    #35af1d,
+    #f0f799,
+    #09d61a,
+    rgb(34, 93, 56)
+  );
+  background-size: 300% 200%;
+}
+
+.education-gradientBG-container-purple {
+  height: 200px;
+  background: linear-gradient(
+    -200deg,
+    #000000,
+    #9900ff,
+    #7700ff,
+    rgb(119, 0, 255)
+  );
+  background-size: 300% 200%;
+}
+
+.gradientBG {
+  height: 150px;
+  margin-bottom: 50px;
+  border: white solid 1px;
+  border-radius: 0 0 200px 0;
+  background: white;
+  background-size: 300% 200%;
+}
+
+.gradientBG-dark {
+  height: 150px;
+  margin-bottom: 50px;
+  border-bottom: #212529 solid 1px;
+  border-radius: 0 0 200px 0;
+  background: #212529;
+  background-size: 300% 200%;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 145px;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  background-color: #212529;
+}
+
+.icon {
+  font-size: 36px;
+  color: #007bff !important;
+}
+
+.icon:hover {
+  color: #e73c7e !important;
+}
+
+.icon-navbar {
+  font-size: 24px;
+}
+
+.icon-navbar:hover {
+  color: #e73c7e !important;
+}
+
+.nav-link:hover {
+  color: white !important;
+}
+
+.active {
+  border-radius: 30px;
+  background: linear-gradient(-45deg, #6d0bbd, #9230af, #db7515, #faf871);
+  background-size: 300% 200%;
+  animation: gradientIntroBG 5s ease infinite;
+}
+
+.nav-link:hover {
+  color: whitesmoke !important;
+}
+
+.colored-text {
+  background: -webkit-linear-gradient(
+    -45deg,
+    #ee7752,
+    #e73c7e,
+    #23a6d5,
+    #23d5ab
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.question-form {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.empty-field-error {
+  display: none;
+  color: red;
+}
+
+.invalid-email-char {
+  display: none;
+  color: red;
+}
+
+.resume:hover {
+  animation: shake 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+
+  25% {
+    transform: translate(-1px, -2px) rotate(-5deg);
+  }
+
+  50% {
+    transform: translate(-3px, 0px) rotate(5deg);
+  }
+
+  75% {
+    transform: translate(-1px, 1px) rotate(-5deg);
+  }
+
+  100% {
+    transform: translate(1px, -2px) rotate(2deg);
+  }
+}
+
+/*adjusting carousel image properties*/
+.carousel-inner > .carousel-item > img {
+  width: 1300px;
+  height: 650px;
+  object-fit: cover;
+}
+
+.carousel-inner > #item-9 > img {
+  object-position: 0 100%;
+}
+.carousel-inner > #item-16 > img {
+  object-position: 0 100%;
+}
+.carousel-inner > #item-20 > img {
+  object-position: 0 100%;
+}
+.carousel-inner > #item-23 > img {
+  object-position: 0 100%;
+}
+.carousel-inner > #item-30 > img {
+  object-position: 0 100%;
+}
+.carousel-inner > #item-31 > img {
+  object-position: 0 100%;
+}
+
+.carousel-inner > #item-19 > img {
+  object-position: 100% 0;
+}
+
+#school-title {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background: url("./resources/images/cpp/cpp-logo-opacity-50.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: -1;
+}
+
+#school-title-cpp {
+  opacity: 60%;
+  font-size: 2em;
+}
+
+.section-header {
+  position: absolute;
+  top: 0;
+  padding: 20px 0 20px 20px;
+}
+
+.header-right {
+  right: 0;
+  padding-right: 20px;
+}
+
+.section-container {
+  position: relative;
+  display: table;
+  overflow: auto;
+}
+
+.section-content {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 30px;
+  width: 50%;
+}
+
+.section-image {
+  display: inline-block;
+  max-width: 100%;
+}
+
+.section-cpp-overview {
+  text-align: center;
+  padding-top: 150px;
+}
+
+.section-cis-overview {
+  text-align: center;
+}
+
+#section-cis-overview-header {
+  padding: 0 20px;
+}
+
+.section-cpp-overview-end {
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #212529; /* For browsers that do not support gradients */
+}
+
+.section-cis-header {
+  padding: 30px 0 5px 0;
+  border-bottom: solid purple 3px;
+  margin-bottom: 20px;
+  /* background: linear-gradient(
+    -200deg,
+    #000000,
+    #9900ff,
+    #7700ff,
+    rgb(119, 0, 255)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 300% 200%; */
+}
+
+.section-cis-body {
+  background-color: #212529;
+}
+
+.bg-dark {
+  color: white;
+}
+
+.section-cis-container {
+  padding: 30px;
+}
+
+.bg-screen {
+  background-color: rgba(0, 0, 0, 0.322);
+}
+
+figure.container {
+  background-repeat: no-repeat;
+  padding: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+/* figure.container:hover {
+  border: 1px solid red;
+}
+
+figure:hover > #admin-cis-image {
+  opacity: 0;
+} */
+
+figure > img {
+  max-width: 100%;
+  /* transition: all 0.5s ease-in-out; */
+  display: block;
+  cursor: pointer;
+}
+
+.subheader {
+  padding: 20px;
+}
+
+.subcontent {
+  padding: 0 30px;
+}
+
+.timeline {
+  display: initial;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 99;
+  background-color: rgba(7, 7, 7, 0.733);
+}
+
+.timeline-ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.timeline-items {
+  float: left;
+}
+
+.timeline-items > a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+.timeline-items > a:hover {
+  background: linear-gradient(
+    -200deg,
+    #000000,
+    #9900ff,
+    #7700ff,
+    rgb(119, 0, 255)
+  );
+  background-size: 300% 200%;
+}
+
+.puppy-page-not-found {
+  max-width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.project-header-container {
+  position: relative;
+}
+
+.project-header-bg {
+  position: absolute;
+  font-size: 8em;
+  text-align: center;
+  vertical-align: middle;
+  color: #0000001a;
+  z-index: -1;
+  width: 100%;
+  height: 200px;
+  line-height: 200px;
+}
+
+.project-header {
+  text-align: center;
+  vertical-align: middle;
+  height: 200px;
+  line-height: 200px;
+  color: #000000;
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.project-content-container {
+  background-image: url(./resources/images/project/react-opacity-25.png);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.intro-image {
+  width: 50%;
+  height: auto;
+  border-style: solid;
+  border-width: 5px;
+  border-color: white;
+}
+
+.description {
+  text-align: initial;
+  width: 45%;
+  margin: auto;
+}
+
+.body-content {
+  text-align: initial;
+  font-size: 1.2em;
+  width: 80%;
+  margin: auto;
+  color: #777;
+}
+
+.title {
+  padding: 70px;
+  margin: 0;
+}
+
+.description-container {
+  padding: 70px 0;
+  margin: 0;
+}
+
+/*One screen: full width*/
+@media screen and (max-width: 1920px) {
+}
+
+/*Smaller PC screens*/
+@media screen and (max-width: 1200px) {
+  .section-header {
+    position: relative;
+    display: table-caption;
+    background-color: #212529;
+  }
+
+  p {
+    font-size: initial;
+  }
+}
+
+/*iPads*/
+@media screen and (max-width: 768px) {
+  .section-content {
+    width: 100%;
+    display: block;
+  }
+
+  .intro-image {
+    width: 80%;
+  }
+
+  .description {
+    width: 100%;
+  }
+
+  .content-container {
+    padding: 0;
+    margin: 0 0 50px 0;
+  }
+
+  .body-content {
+    width: 100%;
+    font-size: initial;
+  }
+
+  .navbar-nav {
+    padding: 0 50px !important;
+  }
+
+  .nav-item > a.active {
+    border-radius: 0;
+    padding-left: 20px !important;
+    background: linear-gradient(-45deg, #6d0bbd, #9230af, #db7515, #faf871);
+    background-size: 300% 200%;
+    animation: gradientIntroBG 5s ease infinite;
+  }
+
+  .project-header-bg {
+    font-size: 6em;
+  }
+}
+
+/*Phones*/
+@media screen and (max-width: 576px) {
+  .intro-image {
+    width: 100%;
+  }
+
+  .timeline {
+    left: 0;
+    bottom: 0;
+    font-size: 0.8em;
+  }
+
+  #myBtn {
+    right: 0;
+    bottom: 0;
+  }
+
+  .body-content-container {
+    width: 100%;
+  }
+
+  .align-page {
+    padding: 100px 20px;
+  }
+
+  .project-header-bg {
+    font-size: 5em;
+  }
+}

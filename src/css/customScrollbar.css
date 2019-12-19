@@ -1,0 +1,43 @@
+/*
+The -webkit-scrollbar family of properties consists of seven different pseudo-elements that, together, comprise a full scrollbar UI element:
+
+1   ::-webkit-scrollbar addresses the background of the bar itself. It is usually covered by the other elements
+2   ::-webkit-scrollbar-button addresses the directional buttons on the scrollbar
+3   ::-webkit-scrollbar-track addresses the empty space “below” the progress bar
+4   ::-webkit-scrollbar-track-piece is the top-most layer of the the progress bar not covered by the draggable scrolling element (thumb)
+5   ::-webkit-scrollbar-thumb addresses the draggable scrolling element that resizes depending on the size of the scrollable element
+6   ::-webkit-scrollbar-corner addresses the (usually) bottom corner of the scrollable element, where two scrollbars might meet
+7   ::-webkit-resizer addresses the draggable resizing handle that appears above the scrollbar-corner at the bottom corner of some elements
+*/
+
+.force-overflow {
+  min-height: 0;
+}
+
+body::-webkit-scrollbar {
+  width: 20px;
+  background-color: #343a40;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: rgb(238, 238, 234);
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  /* background: url("../resources/images/8ball.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain; */
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0.44, #f56476),
+    color-stop(0.72, #e43f6f),
+    color-stop(0.86, #be3e82)
+  );
+}
