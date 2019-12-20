@@ -11,9 +11,41 @@ import NotFound from "./components/notFound";
 import Contact from "./components/contact";
 import Education from "./components/education";
 import Footer from "./common/footer";
+import Loader from "./common/loader";
 
 class App extends Component {
+  state = {
+    loading: true
+  };
+
+  /*
+  Loader
+  
+  Declare loading state to true. A sleep() that resturn a Promise and 
+  resolve timeOut from x-seconds. A wait() function where we initialize
+  the wait time and setState loading to false. In componentDidMount()
+  we call the wait() and passes the wait time. 
+  
+  Use conditional rendering to show <Loader />. Note the import and 
+  loader.jsx which has the loading details from font-awesome. CSS
+  loader and conter-loader class.
+
+  */
+  sleep = milliseconds => {
+    return new Promise(resolve => setTimeout(resolve, milliseconds));
+  };
+
+  wait = async (milliseconds = 2000) => {
+    await this.sleep(milliseconds);
+    this.setState({ loading: false });
+  };
+
+  componentDidMount() {
+    this.wait(2000);
+  }
+
   render() {
+    if (this.state.loading) return <Loader />;
     return (
       <React.Fragment>
         <div className="page-container">

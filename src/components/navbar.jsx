@@ -29,7 +29,11 @@ class NavBar extends Component {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          <a className="navbar-brand" href="/home">
+          <a
+            className="navbar-brand"
+            href="/home"
+            style={{ maxHeight: "40px", padding: "0 50px 0 20px" }}
+          >
             <img
               src={require("../resources/images/logo.png")}
               alt=""
