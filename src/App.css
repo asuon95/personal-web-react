@@ -622,6 +622,15 @@ div.loader {
   font-size: 100px;
 }
 
+.brand-image {
+  max-height: 40px;
+  padding: 0 20%;
+}
+
+.navbar-nav {
+  padding-left: 50px;
+}
+
 /*PC @ 1920px: section header display table-caption*/
 @media screen and (max-width: 1920px) {
   .section-header {
