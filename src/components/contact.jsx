@@ -184,9 +184,9 @@ class Contact extends Component {
           <h2 className="center-page">Question. Comment. Concern.</h2>
           <p>
             Thank you for visiting. For any question, comment or concern please
-            drop me an email. Alternatively, you can fill out the form below and
-            I will carefully review the information and get back to you if
-            needed. Thank you.
+            drop me an email at <i>acesuon.me@gmail.com</i>. Alternatively, you
+            can fill out and submit the form below and I will carefully review
+            the information and get back to you if needed.
             <br />
             <br />
             You might also download my Resume in PDF format by clicking this

@@ -37,7 +37,9 @@ class NotFound extends Component {
     return (
       <div className="my-page-not-found-container">
         <div className="page-not-found-content">
-          <h2 className="center-page">Can't find a PAW-age? Me neither ...</h2>
+          <h2 className="center-page">
+            Can't find a page? Bam-Bam sympathizes with you ...
+          </h2>
           <img
             className="puppy-page-not-found"
             src={require("../resources/images/404-puppy.png")}

@@ -89,8 +89,8 @@ class Education extends Component {
                 West and is nationally ranked for helping students achieve
                 economic success. As an inclusive polytechnic university, we
                 cultivate success through experiential learning, discovery and
-                innovation. Our graduates are ready to succeed in the
-                professional world on Day 1.
+                innovation. Graduates are ready to succeed in the professional
+                world on Day 1.
                 <br />
                 <br />
                 Our history and geography are unlike any other university in the
@@ -148,12 +148,11 @@ class Education extends Component {
                 nation.
                 <br />
                 <br />
-                We choose our faculty based on their success and experience in
-                the real world, as well as their ability to teach and
-                communicate. Their strong connection to the professional world
-                maintains the quality and currency of their teaching and gives
-                students direct link to rewarding internships and career
-                opportunities.
+                Faculty are chosen based on their success and experience in the
+                real world, as well as their ability to teach and communicate.
+                Their strong connection to the professional world maintains the
+                quality and currency of their teaching and gives students direct
+                link to rewarding internships and career opportunities.
                 <br />
                 <br />
                 When it comes to quality education, affordability and career
@@ -243,7 +242,7 @@ class Education extends Component {
                   The CIS program has a “learn-by-doing” approach to teaching in
                   which students participate in technology-based projects
                   through service learning, internships and a mandatory group
-                  Senior Project with industry.
+                  senior project with industry.
                   <br />
                   <br />
                   Below is the 2018-2019 CIS curricular sheet. Highlighted in
@@ -273,33 +272,36 @@ class Education extends Component {
                   className="section-cis-header"
                   id="section-cis-breakdown-header"
                 >
-                  Breakdown
+                  The Breakdown
                 </h2>
                 <div>
                   <p>
-                    The curricular sheet above contains the complete detail
-                    about the various classes a business major student has to
-                    take. Here's the finer details about the CIS track.
+                    The curricular sheet contains the complete detail about the
+                    various core classes and specialization tracks for a CIS
+                    major. Here's the finer details about the Application
+                    Development track.
                   </p>
                   <div>
                     <h3 className="subheader">CIS core series</h3>
                     <p className="subcontent">
                       The cis core classes cover a broad range of computer
-                      technical skills from basic to advanced.
+                      technical skills from essential basics to advanced
+                      processes.
                     </p>
                     <div>
                       <h4 className="subheader">CIS 1000s and 2000s</h4>
                       <p className="subcontent">
                         The CIS 1000s level classes teach baisc technical
-                        skills. At the 1000s level I mastered advanced
-                        techniques with Microsoft Office softwares such as Word,
-                        Excel, Powerpoint, and Access. At the 2000s level I
-                        learned about the various hardware components of a
-                        computer like RAM, storage drives, CPU, and GPU. In
+                        skills. At the 1000s level I mastered essential basics
+                        with Microsoft Office softwares such as Word, Excel,
+                        Powerpoint, and Access. At the 2000s level I learned
+                        about the various hardware components of a computer like
+                        RAM, storage drives, CPU, GPU, and proccessor. In
                         addition, I have also studied contemporary computer
-                        system fundamentals such as File Management, User
-                        Interface, and Device Management for Windows, and
-                        explosure to IT Infrastructure.
+                        system fundamentals like File Management, User
+                        Interface, and Device Management for Windows, with
+                        explosure to IT infrastructure concepts like networking,
+                        binary, and network servers.
                         <br />
                         <br />
                         Class Spotlight
@@ -313,30 +315,31 @@ class Education extends Component {
                     <div>
                       <h4 className="subheader">CIS 3000s and 4000s</h4>
                       <p className="subcontent">
-                        Here at the 3000s and 4000s levels is where things get
-                        intense. At this level I learned more complex
-                        computational structures like database design and
-                        developement, and systems analysis and design. In
-                        addition, I've studied Object-Oriented Programming for
-                        business with Java, using an integrated developement
-                        environment called Netbeans.
+                        At the 3000s and 4000s level is where things get
+                        intense. At this level I learned more complex system
+                        structures like database design and developement, and
+                        systems analysis and design. In addition, I've also
+                        studied object-oriented programming for business with
+                        Java, using an integrated developement environment
+                        called Netbeans.
                         <br />
                         <br />
-                        Follow up with Web Developement which include
-                        Client-side Web Development and Server-side Web
-                        Development. The client-side web developement is an
+                        Next up is Web Developement, which include both
+                        client-side web development and server-side web
+                        development. Client-side web developement is an
                         equivalent introduction to front-end programming, and
-                        server-side to back-end programming. In client-side I
-                        learned HTML, CSS and Javascript as a fundamental for
-                        responsive web design. On the server-side I learned PHP,
-                        with Apache server and phpMyAdmin database
-                        implementation, and ASP.net with MySQL database
-                        implementation.
+                        server-side to back-end programming. In client-side
+                        developement I learned essential techniques and markups
+                        like HTML, CSS, XML and Javascript as a fundamental for
+                        responsive web design. On the server-side I studied PHP,
+                        with Apache server and phpMyAdmin database, and ASP.net
+                        with MySQL database.
                         <br />
                         <br />
-                        Some other classes worth mentioning include e-commerce
-                        using the server-side technologies, and android mobile
-                        programming using Java and XML data format.
+                        Some other classes that I've studied and worth
+                        mentioning include e-commerce using the server-side
+                        technologies, and android mobile programming using Java
+                        and XML data format.
                         <br />
                         <br />
                         Class Spotlight
@@ -376,34 +379,33 @@ class Education extends Component {
                 <h2 className="section-cis-header">Interests and Hobbies</h2>
                 <p>
                   After graduation I find myself with more free time on my hand,
-                  so I decided to explore my interests and hobbies. I discovered
-                  many new technologies that I would like to learn and here's a
-                  list of what I've studied.
+                  so I've decided to explore my interests and hobbies. I
+                  discovered many new inspirations and obsessions. Here's a list
+                  of what I've studied so far.
                 </p>
                 <div className="front-end">
                   <h3 className="subheader">Front-end Technologies</h3>
-                  <p className="subcontent">
-                    ES6
-                    <br />
-                    ReactJS
-                  </p>
+                  <ul className="subcontent">
+                    <li>ES6</li>
+                    <li>ReactJS</li>
+                  </ul>
                 </div>
                 <div className="back-end">
                   <h3 className="subheader">Back-end Technologies</h3>
-                  <p className="subcontent">
-                    NodeJS
-                    <br />
-                    Python
-                  </p>
+                  <ul className="subcontent">
+                    <li>NodeJS</li>
+                    <li>Python</li>
+                  </ul>
                 </div>
                 <div className="other">
                   <h3 className="subheader">Other Technologies</h3>
-                  <p className="subcontent">
-                    Unity Game Developement with C#
-                    <br />
-                    Video Recording and Editing with OBS, Audacity, GIMP, and
-                    Davinci Resolve
-                  </p>
+                  <ul className="subcontent">
+                    <li>Unity Game Developement with C#</li>
+                    <li>
+                      Video Recording and Editing with OBS, Audacity, GIMP, and
+                      Davinci Resolve
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
