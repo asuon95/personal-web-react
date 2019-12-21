@@ -42,6 +42,64 @@ p {
   font-size: 1.1em;
 }
 
+.project-image {
+  max-width: 100%;
+  overflow: hidden;
+  border: solid 2px white;
+  margin: 20px 0;
+  transform: none;
+}
+
+.bg-project-inner {
+  background-color: #282c34;
+  color: white;
+  padding: 20px;
+}
+
+.project-more-detail {
+  padding-bottom: 70px;
+  float: right;
+}
+
+.project-more-detail-link {
+  font-size: 1.5em;
+  color: white;
+  text-decoration: none;
+}
+
+.project-more-detail-link:hover {
+  color: tomato;
+  text-decoration: none;
+}
+
+.project-content {
+  background-color: #212529;
+}
+
+.my-contact-header {
+  line-height: 214px;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+#bg-contact-container {
+  background-color: #212529;
+}
+
+#bg-contact-inner-container {
+  background-color: tomato;
+  box-shadow: 60px -16px rgb(75, 191, 230);
+  padding: 150px 70px 180px 70px;
+  max-width: 50%;
+}
+
+.content-contact-inner-container {
+  margin: auto;
+  background-color: #282c34;
+  color: white;
+  padding: 40px 20px;
+}
+
 /*complements footer*/
 .page-container {
   position: relative;
@@ -268,7 +326,6 @@ p {
 }
 
 .active {
-  border-radius: 30px;
   background: linear-gradient(-45deg, #6d0bbd, #9230af, #db7515, #faf871);
   background-size: 300% 200%;
   animation: gradientIntroBG 5s ease infinite;
@@ -373,6 +430,7 @@ p {
   background-repeat: no-repeat;
   background-size: contain;
   z-index: -1;
+  min-height: 214px;
 }
 
 #school-title-cpp {
@@ -431,7 +489,6 @@ p {
 
 .section-cis-header {
   padding: 30px 0 5px 0;
-  border-bottom: solid purple 3px;
   margin-bottom: 20px;
   /* background: linear-gradient(
     -200deg,
@@ -448,6 +505,13 @@ p {
 
 .section-cis-body {
   background-color: #212529;
+}
+
+.project-inner-container {
+  max-width: 50%;
+  margin: auto;
+  background-color: tomato;
+  box-shadow: 60px -16px rgb(75, 191, 230);
 }
 
 .bg-dark {
@@ -537,6 +601,7 @@ figure > img {
 
 .project-header-container {
   position: relative;
+  padding: 7px 0;
 }
 
 .project-header-bg {
@@ -600,8 +665,6 @@ figure > img {
 }
 
 .nav-item > a.active {
-  border: 3px solid white;
-  border-radius: 10px 40px 40px 10px;
   padding-left: 10px;
   background: linear-gradient(-45deg, #6d0bbd, #9230af, #db7515, #faf871);
   background-size: 300% 200%;
@@ -640,6 +703,22 @@ div.loader {
   }
 }
 
+/*PC @ 1500px: project and contact page scale*/
+@media screen and (max-width: 1500px) {
+  .project-inner-container {
+    max-width: 60%;
+  }
+
+  .section-cis-container {
+    padding: 20px;
+  }
+
+  #bg-contact-inner-container {
+    padding: 100px 70px 120px 70px;
+    max-width: 60%;
+  }
+}
+
 /*Smaller PC screens*/
 @media screen and (max-width: 1200px) {
   .content-container {
@@ -666,6 +745,19 @@ div.loader {
   h2 {
     font-size: 1.8rem !important;
   }
+
+  .project-inner-container {
+    max-width: 80%;
+  }
+
+  .section-cis-container {
+    padding: 0;
+  }
+
+  #bg-contact-inner-container {
+    padding: 80px 50px 100px 50px;
+    max-width: 80%;
+  }
 }
 
 /*expand body content and headers @ 991px*/
@@ -676,6 +768,18 @@ div.loader {
 
   .center-page {
     width: 100%;
+  }
+
+  .project-inner-container {
+    max-width: 90%;
+  }
+
+  .align-page {
+    padding: 60px 40px;
+  }
+
+  #bg-contact-inner-container {
+    max-width: 90%;
   }
 }
 
@@ -715,6 +819,19 @@ div.loader {
   .project-header-bg {
     font-size: 6em;
   }
+
+  .project-inner-container {
+    max-width: 95%;
+  }
+
+  .align-page {
+    padding: 60px 20px;
+  }
+
+  #bg-contact-inner-container {
+    padding: 60px 50px 80px 50px;
+    max-width: 95%;
+  }
 }
 
 /*Turn off timeline hotkey bar*/
@@ -749,6 +866,14 @@ div.loader {
   h2 {
     font-size: 2rem !important;
   }
+
+  .align-page {
+    padding: 20px;
+  }
+
+  #bg-contact-inner-container {
+    padding: 20px;
+  }
 }
 
 /*iPhone XS Max @ 414px(larger) TO iPhone 11 Pro @ 375px(smaller)*/
@@ -773,6 +898,14 @@ div.loader {
 
   h2 {
     font-size: 1.5rem !important;
+  }
+
+  .align-page {
+    padding: 10px;
+  }
+
+  #bg-contact-inner-container {
+    padding: 10px;
   }
 }
 

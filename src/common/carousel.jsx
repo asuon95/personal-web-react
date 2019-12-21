@@ -14,7 +14,7 @@ class Carousel extends Component {
   componentDidMount = () => {
     const state = { ...this.state };
 
-    for (let i = 2; i <= state.items.item_count; i++) {
+    for (let i = 3; i <= state.items.item_count; i++) {
       state.items_jsx.push(i);
     }
 
@@ -34,7 +34,7 @@ class Carousel extends Component {
           <div className="carousel-inner">
             <div className="carousel-item active" data-interval="7000">
               <img
-                src={require("../resources/images/cpp/cpp (1).jpg")}
+                src={require("../resources/images/cpp/cpp (2).jpg")}
                 className="d-block w-100"
                 alt="..."
               />

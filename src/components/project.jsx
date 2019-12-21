@@ -37,15 +37,15 @@ class Project extends Component {
           <h2 className="project-header">P r o j e c t</h2>
         </div>
         <div className="project-content">
-          <div className="section-cis-body">
+          <div className="project-inner-container">
             <div className="align-page container">
-              <div className="section-cis-container bg-dark">
+              <div className="section-cis-container">
                 <NewProject
                   title="React App: News API"
                   description="React application utilizing a news API and Bootstrap to process and
-                  display news. Deployment to Heroku. Please note that the page may be
-                  slow to start on initial start up. Please wait about 20-30 sec and try
-                  refreshing if no content is showing. Thanks."
+                  display news. Deployed to Heroku. Please note that the page may be
+                  slow to start on initial start up. Please wait about 20-30 seconds and
+                  refresh the page if no content is showing."
                   githubLink="https://github.com/asuon95/react-news-site-v2.git"
                   siteLink="https://glacial-scrubland-82750.herokuapp.com/home"
                   // imageSrc="../resources/images/project/react.png"
@@ -54,7 +54,7 @@ class Project extends Component {
             </div>
           </div>
         </div>
-        <div style={{ backgroundColor: "white" }}>
+        <div className="education-gradientBG-container-purple">
           <div className="gradientBG-dark"></div>
         </div>
         <button onClick={this.topFunction} id="myBtn" title="Go to top">

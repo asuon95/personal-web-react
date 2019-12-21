@@ -65,7 +65,7 @@ class Education extends Component {
             <h2>California State Polytechnic University, Pomona</h2>
           </div>
           <div className="section-carousel">
-            <Carousel items={31} />
+            <Carousel items={30} />
           </div>
           <div>
             <div className="section-cpp-overview">
@@ -410,7 +410,7 @@ class Education extends Component {
               </div>
             </div>
           </div>
-          <div style={{ backgroundColor: "white" }}>
+          <div className="education-gradientBG-container-purple">
             <div className="gradientBG-dark"></div>
           </div>
           <button onClick={this.topFunction} id="myBtn" title="Go to top">

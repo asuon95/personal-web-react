@@ -179,111 +179,120 @@ class Contact extends Component {
 
   render() {
     return (
-      <div className="my-contact-container">
-        <div className="container">
-          <h2 className="center-page">Question. Comment. Concern.</h2>
-          <p>
-            Thank you for visiting. For any question, comment or concern please
-            drop me an email at <i>acesuon.me@gmail.com</i>. Alternatively, you
-            can fill out and submit the form below and I will carefully review
-            the information and get back to you if needed.
-            <br />
-            <br />
-            You might also download my Resume in PDF format by clicking this
-            icon.{" "}
-            <a
-              href={require("../resources/docs/resume.pdf")}
-              download="ace_resume"
-              className="icon"
-            >
-              <img
-                className="resume"
-                src={require("../resources/images/resume.png")}
-                alt=""
-              />
-            </a>
-          </p>
-          <form id="question-form" onSubmit={this.handleSubmit.bind(this)}>
-            <div className="form-group">
-              <label htmlFor="from_name">
-                <strong>Name</strong>
-              </label>
-              <input
-                id="from_name"
-                name="from_name"
-                type="text"
-                className="form-control"
-                value={this.state.name}
-                onChange={this.handleChange.bind(this, "name")}
-                placeholder="Is your name Grace? Because you're amazing."
-              />
-            </div>
-            <div className="form-group">
-              <label htmlFor="subject">
-                <strong>Subject</strong>
-              </label>
-              <input
-                id="subject"
-                name="subject"
-                type="text"
-                className="form-control"
-                value={this.state.subject}
-                onChange={this.handleChange.bind(this, "subject")}
-                placeholder="Subject"
-              />
-            </div>
-            <div className="form-group">
-              <label htmlFor="reply_to">
-                <strong>Contact Email</strong>
-              </label>
-              <input
-                id="reply_to"
-                name="reply_to"
-                type="text"
-                className="form-control"
-                value={this.state.email}
-                onChange={this.handleChange.bind(this, "email")}
-                placeholder="example@gmail.com"
-              />
-              <span className="empty-field-error">
-                This field cannot be empty.
-              </span>
-              <span className="invalid-email-char">
-                Enter a valid email using the @ character.
-              </span>
-            </div>
-            <div className="form-group">
-              <label htmlFor="message_html">
-                <strong>Message</strong>
-              </label>
-              <textarea
-                id="message_html"
-                name="message_html"
-                type="textarea"
-                className="form-control"
-                value={this.state.message}
-                onChange={this.handleChange.bind(this, "message")}
-                placeholder="I'm all ears."
-              />
-              <span className="empty-field-error">
-                This field cannot be empty.
-              </span>
-            </div>
-            <button type="submit" className="btn btn-primary">
-              Send
-            </button>
-          </form>
-          <button onClick={this.topFunction} id="myBtn" title="Go to top">
-            <i
-              className="fa fa-chevron-up"
-              style={{
-                fontSize: "24px"
-              }}
-            ></i>
-          </button>
+      <div>
+        <div>
+          <h2 className="center-page my-contact-header">
+            Question. Comment. Concern.
+          </h2>
         </div>
-        <div className="education-gradientBG-container-purple">
-          <div className="gradientBG"></div>
+        <div className="my-contact-container" id="bg-contact-container">
+          <div className="container" id="bg-contact-inner-container">
+            <div className="content-contact-inner-container">
+              <p>
+                Thank you for visiting. For any question, comment or concern
+                please drop me an email at <i>acesuon.me@gmail.com</i>.
+                Alternatively, you can fill out and submit the form below and I
+                will carefully review the information and get back to you if
+                needed.
+                <br />
+                <br />
+                You might also download my Resume in PDF format by clicking this
+                icon.{" "}
+                <a
+                  href={require("../resources/docs/resume.pdf")}
+                  download="ace_resume"
+                  className="icon"
+                >
+                  <img
+                    className="resume"
+                    src={require("../resources/images/resume.png")}
+                    alt=""
+                  />
+                </a>
+              </p>
+              <form id="question-form" onSubmit={this.handleSubmit.bind(this)}>
+                <div className="form-group">
+                  <label htmlFor="from_name">
+                    <strong>Name</strong>
+                  </label>
+                  <input
+                    id="from_name"
+                    name="from_name"
+                    type="text"
+                    className="form-control"
+                    value={this.state.name}
+                    onChange={this.handleChange.bind(this, "name")}
+                    placeholder="Is your name Grace? Because you're amazing."
+                  />
+                </div>
+                <div className="form-group">
+                  <label htmlFor="subject">
+                    <strong>Subject</strong>
+                  </label>
+                  <input
+                    id="subject"
+                    name="subject"
+                    type="text"
+                    className="form-control"
+                    value={this.state.subject}
+                    onChange={this.handleChange.bind(this, "subject")}
+                    placeholder="Subject"
+                  />
+                </div>
+                <div className="form-group">
+                  <label htmlFor="reply_to">
+                    <strong>Contact Email</strong>
+                  </label>
+                  <input
+                    id="reply_to"
+                    name="reply_to"
+                    type="text"
+                    className="form-control"
+                    value={this.state.email}
+                    onChange={this.handleChange.bind(this, "email")}
+                    placeholder="example@gmail.com"
+                  />
+                  <span className="empty-field-error">
+                    This field cannot be empty.
+                  </span>
+                  <span className="invalid-email-char">
+                    Enter a valid email using the @ character.
+                  </span>
+                </div>
+                <div className="form-group">
+                  <label htmlFor="message_html">
+                    <strong>Message</strong>
+                  </label>
+                  <textarea
+                    id="message_html"
+                    name="message_html"
+                    type="textarea"
+                    className="form-control"
+                    value={this.state.message}
+                    onChange={this.handleChange.bind(this, "message")}
+                    placeholder="I'm all ears."
+                  />
+                  <span className="empty-field-error">
+                    This field cannot be empty.
+                  </span>
+                </div>
+                <button type="submit" className="btn btn-primary">
+                  Send
+                </button>
+              </form>
+              <button onClick={this.topFunction} id="myBtn" title="Go to top">
+                <i
+                  className="fa fa-chevron-up"
+                  style={{
+                    fontSize: "24px"
+                  }}
+                ></i>
+              </button>
+            </div>
+          </div>
+          <div className="education-gradientBG-container-purple">
+            <div className="gradientBG-dark"></div>
+          </div>
         </div>
       </div>
     );
