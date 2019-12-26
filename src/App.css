@@ -670,6 +670,10 @@ figure > img {
   background-size: 300% 200%;
   animation: gradientIntroBG 5s ease infinite;
 }
+
+.project-more-detail > a.active {
+  background: none;
+}
 .center-loader {
   margin: auto;
   width: 50%;

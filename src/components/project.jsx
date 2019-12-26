@@ -48,7 +48,7 @@ class Project extends Component {
                   refresh the page if no content is showing."
                   githubLink="https://github.com/asuon95/react-news-site-v2.git"
                   siteLink="https://glacial-scrubland-82750.herokuapp.com/home"
-                  moreDetail="./project-news-api-breakdown"
+                  moreDetail="./project"
                 />
               </div>
             </div>
