@@ -67,7 +67,7 @@ class Home extends Component {
             <div className="container">
               <div className="body-content-container">
                 <div style={titleCenter}>
-                  <h1>Why I'm Worth Investing</h1>
+                  <h1>Why I'm Worth the Investment</h1>
                   <p>There are many reasons why, but here are a few.</p>
                 </div>
                 <BodyContent

@@ -34,7 +34,7 @@ class Project extends Component {
       <div className="my-project-container">
         <div className="project-header-container">
           <div className="project-header-bg">P R O J E C T</div>
-          <h2 className="project-header">P r o j e c t</h2>
+          <h2 className="project-header">P r o j e c t s</h2>
         </div>
         <div className="project-content">
           <div className="project-inner-container">
@@ -48,7 +48,7 @@ class Project extends Component {
                   refresh the page if no content is showing."
                   githubLink="https://github.com/asuon95/react-news-site-v2.git"
                   siteLink="https://glacial-scrubland-82750.herokuapp.com/home"
-                  // imageSrc="../resources/images/project/react.png"
+                  moreDetail="./project-news-api-breakdown"
                 />
               </div>
             </div>

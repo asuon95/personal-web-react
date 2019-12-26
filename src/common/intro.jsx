@@ -8,7 +8,7 @@ const Intro = () => {
       <div className="wave"></div>
       <div className="intro-content">
         <div className="title">
-          <h2>Passionate Developer Seeking An Opportunity</h2>
+          <h2>Passionate Developer Seeking Career Opportunity</h2>
         </div>
         <div className="image">
           <img
@@ -19,8 +19,8 @@ const Intro = () => {
         </div>
         <div className="description-container">
           <h5 className="description">
-            Hello! My name is Ace. I am seeking a challenging and exciting
-            position as developer/programmer with any technical company.
+            Welcome! My name is Ace Suon. I am seeking a challenging and
+            exciting position as developer/programmer in a technical company.
           </h5>
         </div>
       </div>

@@ -229,8 +229,8 @@ class Education extends Component {
                   Computer Information Systems
                 </h2>
                 <p>
-                  Computer Information Systems(CIS) is an option for the degree
-                  of business administration.
+                  Computer Information Systems(CIS) is one of many studies of
+                  concentrations under Business Administration.
                   <br />
                   <br />
                   CIS emphasizes solving business problems with computing
@@ -245,8 +245,8 @@ class Education extends Component {
                   senior project with industry.
                   <br />
                   <br />
-                  Below is the 2018-2019 CIS curricular sheet. Highlighted in
-                  the red box are the career core classes.
+                  Below is the 2018-2019 CIS Curricular Sheet. Highlighted in
+                  the red box are the core classes.
                 </p>
               </div>
             </div>
@@ -378,10 +378,9 @@ class Education extends Component {
               <div className="section-cis-container bg-dark">
                 <h2 className="section-cis-header">Interests and Hobbies</h2>
                 <p>
-                  After graduation I find myself with more free time on my hand,
-                  so I've decided to explore my interests and hobbies. I
-                  discovered many new inspirations and obsessions. Here's a list
-                  of what I've studied so far.
+                  After graduation I found myself with more free time on my
+                  hand, so I decided to explore my interests and hobbies. Here's
+                  a list of what I've studied so far.
                 </p>
                 <div className="front-end">
                   <h3 className="subheader">Front-end Technologies</h3>

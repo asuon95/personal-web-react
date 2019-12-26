@@ -12,6 +12,7 @@ import Contact from "./components/contact";
 import Education from "./components/education";
 import Footer from "./common/footer";
 import Loader from "./common/loader";
+import ProjectNewsAPIBreakdown from "./components/project-news-api-breakdown";
 
 class App extends Component {
   state = {
@@ -58,6 +59,10 @@ class App extends Component {
             <Route path="/project" component={Project}></Route>
             <Route path="/contact" component={Contact}></Route>
             <Route path="/not-found" component={NotFound}></Route>
+            <Route
+              path="/project-news-api-breakdown"
+              component={ProjectNewsAPIBreakdown}
+            ></Route>
             <Redirect from="/" exact to="/home" />
             <Redirect to="/not-found" />
           </Switch>

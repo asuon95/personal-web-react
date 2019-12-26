@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { toast } from "react-toastify";
+import { NavLink } from "react-router-dom";
 
 class NewProject extends Component {
   state = {};
@@ -34,7 +35,7 @@ class NewProject extends Component {
   };
 
   render() {
-    const { title, description, githubLink, siteLink } = this.props;
+    const { title, description, githubLink, siteLink, moreDetail } = this.props;
     return (
       <div
         style={{ paddingBottom: "50px", marginBottom: "50px" }}
@@ -74,13 +75,13 @@ class NewProject extends Component {
           </a>
         </p>
         <div className="project-more-detail">
-          <a
+          <NavLink
             onClick={this.handleMoreDetailClick}
-            href="#"
             className="project-more-detail-link"
+            to={moreDetail}
           >
             More Detail <i className="fa fa-chevron-right"></i>
-          </a>
+          </NavLink>
         </div>
       </div>
     );
